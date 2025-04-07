@@ -1,5 +1,6 @@
 import { useActionSheet } from '@expo/react-native-action-sheet';
 import { LegendList } from '@legendapp/list';
+// @ts-expect-error Module resolution issue
 import { useHeaderHeight } from '@react-navigation/elements';
 import { Icon } from '@roninoss/icons';
 import { Stack } from 'expo-router';
@@ -326,16 +327,6 @@ const COMPONENTS: ComponentItem[] = [
             Caption 2
           </Text>
         </View>
-      );
-    },
-  },
-  {
-    name: 'Selectable Text',
-    component: function SelectableTextExample() {
-      return (
-        <Text uiTextView selectable>
-          Long press or double press this text
-        </Text>
       );
     },
   },
