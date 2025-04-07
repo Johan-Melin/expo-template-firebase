@@ -2,6 +2,7 @@ import '../global.css';
 import 'expo-dev-client';
 import { ActionSheetProvider } from '@expo/react-native-action-sheet';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+// @ts-expect-error Module resolution issue
 import { ThemeProvider as NavThemeProvider } from '@react-navigation/native';
 import { Icon } from '@roninoss/icons';
 import { Link, Stack } from 'expo-router';
